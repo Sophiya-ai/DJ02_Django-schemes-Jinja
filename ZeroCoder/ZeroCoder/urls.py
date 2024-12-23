@@ -20,8 +20,13 @@ from django.urls import path, include
 #которое находится в отдельном пакете. В него нужно как-то попасть.
 # Для этого существует специальная функция include
 
+# Для работы со статическим файлами подключаем:
+from django.conf import settings
+from django.conf.urls.static import static
+
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('FirstApp.urls')), #если вызываем главную страницу, то пусто в кавычках
     path('HomeworkApp/', include('HomeworkApp.urls')),
-]
+] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) # Для работы со статическим файлами
