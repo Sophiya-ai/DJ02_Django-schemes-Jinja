@@ -1,7 +1,7 @@
 {% extends 'HomeworkApp/layout.html' %}
 
 {% block title %}
-  <title>Проекты</title>
+  <title>Архитектура проектов</title>
 {% endblock %}
 
 {% block content %}
@@ -16,24 +16,21 @@
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="../static/image/blog1.jpg" class="rounded mx-auto d-block" alt="..." height="500">
+      <img src= '{% static "HomeworkApp/img/arch.png" %}' class="rounded mx-auto d-block" alt="..." height="500">
       <div class="carousel-caption d-none d-md-block">
-        <h5>Одежда</h5>
-        <p>"...это неосязаемое сплетение радуг..."</p>
+        <h5>Ахитектура Django приложения</h5>
       </div>
     </div>
     <div class="carousel-item">
-      <img src="../static/image/blog2.jpg" class="rounded mx-auto d-block" alt="..." height="500">
+      <img src= '{% static "HomeworkApp/img/arch2.jpg" %}' class="rounded mx-auto d-block" alt="..." height="500">
       <div class="carousel-caption d-none d-md-block">
-        <h5>Оружие</h5>
-        <p>"красивое, изящное, богато украшенное, волшебное"</p>
+        <h5>Структура проекта на Django</h5>
       </div>
     </div>
     <div class="carousel-item">
-      <img src="../static/image/blog31.jpg" class="rounded mx-auto d-block" alt="..." height="500">
+      <img src= '{% static "HomeworkApp/img/schemeofwork.png" %}' class="rounded mx-auto d-block" alt="..." height="500">
       <div class="carousel-caption d-none d-md-block">
-        <h5>Музыка</h5>
-        <p>"песня творит и лечит, песня указывает дорогу и дарит надежду. Песня несёт свет во тьму..."</p>
+        <h5>Схема работы приложения</h5>
       </div>
     </div>
   </div>

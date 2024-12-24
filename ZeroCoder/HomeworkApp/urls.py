@@ -6,6 +6,6 @@ from . import views
 urlpatterns = [
     path('workWithStatic/',views.wStatic, name='wStatic'),
     path('pros/', views.pros_cons, name='pros'),
-    path('test/', views.test),
-    path('test/', views.test),
+    path('projects/', views.projects, name='projects'),
+    path('problems/', views.problems, name='problems'),
 ]
