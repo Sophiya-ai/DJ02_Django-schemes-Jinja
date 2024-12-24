@@ -29,4 +29,4 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('FirstApp.urls')), #если вызываем главную страницу, то пусто в кавычках
     path('HomeworkApp/', include('HomeworkApp.urls')),
-] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) # Для работы со статическим файлами
+] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) # Для работы со статическим файлами, прописываем их подключение и использование

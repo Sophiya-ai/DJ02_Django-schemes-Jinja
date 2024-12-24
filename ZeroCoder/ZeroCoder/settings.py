@@ -129,4 +129,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # Для работы со статическим файлами
 STATICFILES_DIRS = [
     BASE_DIR / "static",
+    #'var/www/static/', это нужно для подгрузки на сервер
 ]
