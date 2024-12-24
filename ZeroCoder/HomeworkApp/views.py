@@ -18,7 +18,7 @@ def pros_cons(request):
 
 def projects(request):
     context = {
-        'question': 'Django в картинка',
+        'question': 'Django в картинках',
         'active_page': 'projects'
     }
     return render(request, 'HomeworkApp/projects.html', context)
