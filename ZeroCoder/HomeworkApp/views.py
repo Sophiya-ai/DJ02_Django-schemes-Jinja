@@ -11,7 +11,7 @@ def wStatic(request):
 
 def pros_cons(request):
     context = {
-        'question': 'Перимущества и недостатки Django',
-        'active_page': 'benefits'
+        'question': 'Прeимущества и недостатки Django',
+        'active_page': 'pros'
     }
-    return render(request, 'HomeworkApp/index.html', context)
+    return render(request, 'HomeworkApp/pros.html', context)
