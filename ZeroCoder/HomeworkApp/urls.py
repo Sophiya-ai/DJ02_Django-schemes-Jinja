@@ -4,6 +4,8 @@ from . import views
 
 
 urlpatterns = [
-    path('data/',views.data),
+    path('workWithStatic/',views.wStatic, name='wStatic'),
+    path('pros/', views.pros_cons, name='pros'),
+    path('test/', views.test),
     path('test/', views.test),
 ]

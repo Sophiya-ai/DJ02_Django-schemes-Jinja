@@ -1,0 +1,21 @@
+<ul class="nav nav-pills">
+  <li class="nav-item">
+    <a class="nav-link
+        {% if active_page == 'wStatic' %} active {% endif %}
+        " aria-current="page" href="{% url 'wStatic' %}">{{question}}</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link
+      {% if active_page == 'about' %} active {% endif %}
+      " href="/about/">Блог об эльфах</a>
+  </li><li class="nav-item">
+    <a class="nav-link
+      {% if active_page == 'about' %} active {% endif %}
+      " href="/about/">Блог об эльфах</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link
+      {% if active_page == 'about' %} active {% endif %}
+      " href="/about/">Блог об эльфах</a>
+  </li>
+</ul>
