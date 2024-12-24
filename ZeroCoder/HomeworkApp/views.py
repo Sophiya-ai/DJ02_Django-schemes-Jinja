@@ -16,12 +16,12 @@ def pros_cons(request):
     }
     return render(request, 'HomeworkApp/pros.html', context)
 
-def pros_cons(request):
+def projects(request):
     context = {
-        'question': 'Прeимущества и недостатки Django',
-        'active_page': 'pros'
+        'question': 'Проекты на Django',
+        'active_page': 'projects'
     }
-    return render(request, 'HomeworkApp/pros.html', context)
+    return render(request, 'HomeworkApp/projects.html', context)
 
 def pros_cons(request):
     context = {
