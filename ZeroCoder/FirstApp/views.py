@@ -3,8 +3,11 @@ from django.http import HttpResponse
 
 # Create your views here.
 def index(request):
-    return render(request, 'FirstApp/index.html')
+    data = {
+        'caption': 'Django'
+    }
+    return render(request, 'FirstApp/index.html', data)
 
 def new(request):
-    return render(request, 'FirstApp/new.html')
+    return render(request, 'FirstApp/new.html', {'caption': 'Django'})
 
